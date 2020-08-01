@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "main.js",
   "license": "MIT",
-  "scripts":{
-    "start":"node main.js"
+  "scripts": {
+    "start": "node main.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "puppeteer": "^5.2.1"
   }
