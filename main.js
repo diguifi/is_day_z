@@ -18,12 +18,18 @@ app.get('/', async (req, res) => {
 
         res.status(200).send(response)
     } catch (error) {
+        console.log(error)
         res.status(500).send(error)
     }
 })
 
 async function getServerTime(pageUrl) {
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch({
+        args: [
+          '--no-sandbox',
+          '--disable-setuid-sandbox',
+        ],
+      })
     const page = await browser.newPage()
     await page.goto(pageUrl)
 
