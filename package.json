@@ -1,0 +1,13 @@
+{
+  "name": "is_day_z",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts":{
+    "start":"node main.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^5.2.1"
+  }
+}
